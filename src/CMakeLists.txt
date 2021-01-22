@@ -13,6 +13,7 @@ add_library(
     greeter.cpp
     indicator.cpp
     rotation-lock.cpp
+    vnc.cpp
     usb-manager.cpp
     usb-monitor.cpp
     usb-snap.cpp

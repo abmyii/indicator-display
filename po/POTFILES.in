@@ -1,2 +1,3 @@
 src/rotation-lock.cpp
+src/vnc.cpp
 src/usb-snap.cpp

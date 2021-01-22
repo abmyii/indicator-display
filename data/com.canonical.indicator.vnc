@@ -1,0 +1,11 @@
+[Indicator Service]
+Name=indicator-vnc
+ObjectPath=/com/canonical/indicator/vnc
+Position=90
+
+[phone]
+ObjectPath=/com/canonical/indicator/vnc/phone
+
+[phone_greeter]
+ObjectPath=/com/canonical/indicator/vnc/phone
+

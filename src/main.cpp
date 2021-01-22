@@ -19,6 +19,7 @@
 
 #include <src/exporter.h>
 #include <src/rotation-lock.h>
+#include <src/vnc.h>
 
 #include <src/greeter.h>
 #include <src/usb-manager.h>
@@ -52,6 +53,7 @@ main(int /*argc*/, char** /*argv*/)
     std::vector<std::shared_ptr<Indicator>> indicators;
     std::vector<std::shared_ptr<Exporter>> exporters;
     indicators.push_back(std::make_shared<RotationLockIndicator>());
+    indicators.push_back(std::make_shared<VNCIndicator>());
     for (auto& indicator : indicators) {
       auto exporter = std::make_shared<Exporter>(indicator);
       exporter->name_lost().connect(on_name_lost);
